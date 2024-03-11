@@ -63,7 +63,7 @@ object Logger {
         workingDirectory: String,
         commandName: String,
         logFilePath: String,
-        logName: String? = "ingen_splog"
+        logName: String?
     ) {
         val sb = StringBuilder()
         sb.appendLine(
