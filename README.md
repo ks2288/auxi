@@ -51,7 +51,7 @@ maven {
 
 Then, add the following to your `dependencies` closure:
 ```
-implementation 'com.github.ks2288:auxi:1.0'
+implementation 'com.github.ks2288:auxi:1.0.0-SNAPSHOT'
 ```
 
 #### Kotlin
@@ -65,7 +65,7 @@ maven("https://jitpack.io") {
 ```
 Then, add the following to your existing `dependencies` closure:
 ```
- implementation("com.github.ks2288:auxi:1.0")
+ implementation("com.github.ks2288:auxi:1.0.0-SNAPSHOT")
 ```
 
 ### Submodule (`Git`) 
