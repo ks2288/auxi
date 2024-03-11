@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "com.github.ks288"
-version = "1.0.0-SNAPSHOT"
+version = "v1.0.0-SNAPSHOT"
 
 val dokkaDir = "documentation"
 
