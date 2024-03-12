@@ -96,7 +96,7 @@ Then, add the following to your existing `dependencies` closure within your
  implementation("com.github.ks2288:auxi:1.1.0")
 ```
 
- ### Maven
+ #### Maven
 
 To use this library within a Maven-based project, add the following to your 
 Maven build file
