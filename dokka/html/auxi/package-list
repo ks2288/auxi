@@ -1,0 +1,27 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:////PointingToDeclaration/auxi/[root]/index.html
+$dokka.location:/FSHelper///PointingToDeclaration/auxi/[root]/-f-s-helper/index.html
+$dokka.location:/FSHelper/copyFilesRecursively/#kotlin.String#kotlin.String/PointingToDeclaration/auxi/[root]/-f-s-helper/copy-files-recursively.html
+$dokka.location:/FSHelper/createPathDirectories/#kotlin.String/PointingToDeclaration/auxi/[root]/-f-s-helper/create-path-directories.html
+$dokka.location:/FSHelper/createZip/#java.io.File#java.io.File/PointingToDeclaration/auxi/[root]/-f-s-helper/create-zip.html
+$dokka.location:/FSHelper/getBlankFile/#kotlin.String#kotlin.String#kotlin.String#kotlin.Int?/PointingToDeclaration/auxi/[root]/-f-s-helper/get-blank-file.html
+$dokka.location:/FSHelper/getFileText/#kotlin.String/PointingToDeclaration/auxi/[root]/-f-s-helper/get-file-text.html
+$dokka.location:ext////PointingToDeclaration/auxi/ext/index.html
+$dokka.location:ext//asHex/kotlin.ByteArray#/PointingToDeclaration/auxi/ext/as-hex.html
+$dokka.location:ext//shl/kotlin.UShort#kotlin.Int/PointingToDeclaration/auxi/ext/shl.html
+$dokka.location:ext//shr/kotlin.UShort#kotlin.Int/PointingToDeclaration/auxi/ext/shr.html
+$dokka.location:ext//toByte/kotlin.Boolean#kotlin.Int/PointingToDeclaration/auxi/ext/to-byte.html
+$dokka.location:ext//toByte/kotlin.BooleanArray#/PointingToDeclaration/auxi/ext/to-byte.html
+$dokka.location:ext//toByteArray/kotlin.Array[kotlin.Int]#/PointingToDeclaration/auxi/ext/to-byte-array.html
+$dokka.location:ext//toByteArray/kotlin.BooleanArray#/PointingToDeclaration/auxi/ext/to-byte-array.html
+$dokka.location:ext//toByteArray/kotlin.Int#kotlin.Int#java.nio.ByteOrder/PointingToDeclaration/auxi/ext/to-byte-array.html
+$dokka.location:ext//toByteArray/kotlin.IntArray#kotlin.Int#java.nio.ByteOrder/PointingToDeclaration/auxi/ext/to-byte-array.html
+$dokka.location:ext//toByteArray/kotlin.Long#kotlin.Int#java.nio.ByteOrder/PointingToDeclaration/auxi/ext/to-byte-array.html
+$dokka.location:ext//toHexString/kotlin.ByteArray#kotlin.String/PointingToDeclaration/auxi/ext/to-hex-string.html
+$dokka.location:ext//toInt/kotlin.ByteArray#/PointingToDeclaration/auxi/ext/to-int.html
+$dokka.location:ext//toJavaDate/kotlin.String#kotlin.String/PointingToDeclaration/auxi/ext/to-java-date.html
+$dokka.location:ext//toLocalDateTime/kotlin.String#kotlin.String/PointingToDeclaration/auxi/ext/to-local-date-time.html
+$dokka.location:ext//toUByteArray/kotlin.Int#kotlin.Int#java.nio.ByteOrder/PointingToDeclaration/auxi/ext/to-u-byte-array.html
+ext
+

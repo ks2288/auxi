@@ -5,9 +5,12 @@ plugins {
 }
 
 group = "com.github.ks288"
-version = "1.0.0"
+version = "1.1.0-SNAPSHOT"
 
-val dokkaDir = "documentation"
+val dokkaDir = "dokka"
+val javaDocDir = "javadoc"
+val dokkaHtmlJarTaskName = "dokkaHtmlJar"
+val dokkaJavadocJarTaskName = "dokkaJavadocJar"
 
 repositories {
     mavenCentral()
@@ -35,19 +38,23 @@ tasks.dokkaHtml {
     outputDirectory.set(rootDir.resolve("$dokkaDir/html"))
 }
 
+tasks.dokkaGfm {
+    outputDirectory.set(rootDir.resolve("$dokkaDir/gfm"))
+}
+
 tasks.dokkaJavadoc {
-    outputDirectory.set(rootDir.resolve("$dokkaDir/javadoc"))
+    outputDirectory.set(rootDir.resolve(javaDocDir))
 }
 
 // Dokka HTML document generation task
-tasks.register<Jar>("dokkaHtmlJar") {
+tasks.register<Jar>(dokkaHtmlJarTaskName) {
     dependsOn(tasks.dokkaHtml)
     from(tasks.dokkaHtml.flatMap { it.outputDirectory })
     archiveClassifier.set("html-docs")
 }
 
 // Dokka JavaDoc task for potential Maven deployment requirements
-tasks.register<Jar>("dokkaJavadocJar") {
+tasks.register<Jar>(dokkaJavadocJarTaskName) {
     dependsOn(tasks.dokkaJavadoc)
     from(tasks.dokkaJavadoc.flatMap { it.outputDirectory })
     archiveClassifier.set("javadoc")

@@ -1,6 +1,5 @@
 package ext
 
-import Logger
 import java.text.SimpleDateFormat
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
@@ -20,7 +19,7 @@ fun String.toLocalDateTime(formatString: String): LocalDateTime? = try {
             .ofPattern(formatString)
     )
 } catch (e: Exception) {
-    Logger.error(e.localizedMessage)
+    System.err.println(e.localizedMessage)
     null
 }
 
@@ -34,6 +33,6 @@ fun String.toJavaDate(formatString: String): Date? = try {
     SimpleDateFormat(formatString, Locale.getDefault())
         .parse(this)
 } catch (e: Exception) {
-    Logger.error(e.localizedMessage)
+    System.err.println(e.localizedMessage)
     null
 }

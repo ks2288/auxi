@@ -31,7 +31,7 @@ object FSHelper {
     fun createPathDirectories(path: String): Boolean = try {
         File(path).mkdirs()
     } catch (e: Exception) {
-        Logger.error(e)
+        System.err.println(e)
         Paths.get(path).toFile().exists()
     }
 
@@ -47,14 +47,14 @@ object FSHelper {
         destinationPath: String
     ): Boolean = try {
         val success = createPathDirectories(destinationPath)
-        Logger.debug("Path directories created to $destinationPath: $success")
+        println("Path directories created to $destinationPath: $success")
         Paths.get(destinationPath).copyToRecursively(
             target = Paths.get(sourcePath),
             followLinks = false
         )
         File(destinationPath).listFiles()?.isNotEmpty() ?: false
     } catch (e: Exception) {
-        Logger.error(e)
+        System.err.println(e)
         false
     }
 
@@ -67,7 +67,7 @@ object FSHelper {
     fun getFileText(filePath: String): String? = try {
         File(filePath).readText()
     }catch (e: Exception) {
-        Logger.error(e)
+        System.err.println(e)
         null
     }
 
@@ -99,7 +99,7 @@ object FSHelper {
         }
         f
     } catch (e: Exception) {
-        Logger.error(e)
+        System.err.println(e)
         null
     }
 
@@ -126,7 +126,7 @@ object FSHelper {
         var count: Int
         while (stream.read(data, 0, BUFFER_SIZE)
                 .also { count = it } != -1) {
-            Logger.debug("Writing data to zip with size: $count")
+            println("Writing data to zip with size: $count")
             out.write(data, 0, count)
         }
 
@@ -134,7 +134,7 @@ object FSHelper {
         out.close()
         dest
     } catch (e: Exception) {
-        Logger.error(e)
+        System.err.println(e)
         null
     }
 }
