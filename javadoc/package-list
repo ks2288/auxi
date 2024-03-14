@@ -1,6 +1,0 @@
-$dokka.format:javadoc-v1
-$dokka.linkExtension:html
-$dokka.location:////PointingToDeclaration/[root]/package-summary.html
-$dokka.location:/FSHelper///PointingToDeclaration/[root]/FSHelper.html
-ext
-
